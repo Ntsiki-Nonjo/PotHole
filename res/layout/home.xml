@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:background="#e5e5e5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonUpload"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:src="@drawable/buttonupload"
+            android:layout_centerHorizontal="true"/>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/imageButtonUpload">
+        <LinearLayout
+                android:id="@+id/postLayout"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:id="@+id/imageView"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="@null"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/buttonprofile"
+            android:id="@+id/imageButtonProfile"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>

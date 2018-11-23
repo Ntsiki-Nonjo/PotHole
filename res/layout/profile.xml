@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#242424"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+
+
+>
+
+    <RelativeLayout
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+        <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/profilepic"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:id="@+id/imageViewProfilePicture"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#242424"
+                android:fontFamily="sans-serif-thin"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Username"
+                android:layout_margin="20dp"
+                android:id="@+id/textViewProfileUsername"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#242424"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Email"
+                android:id="@+id/textViewEmailProfile"
+                android:layout_below="@+id/textViewProfileUsername"
+                android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextFirstName"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#242424"
+                    android:textColorHint="#242424"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="30dp"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:hint="First Name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextLastName"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:padding="10dp"
+                    android:textColor="#242424"
+                    android:textColorHint="#242424"
+                    android:textSize="30dp"
+                    android:background="@drawable/border"
+                    android:hint="Last Name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="#242424"
+                    android:textColorHint="#242424"
+                    android:id="@+id/editTextUsername"
+                    android:fontFamily="sans-serif-thin"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Username"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-thin"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#242424"
+                    android:textColorHint="#242424"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:id="@+id/editTextTown"
+                    android:textSize="30dp"
+                    android:hint="Town"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:fontFamily="sans-serif-thin"
+                    android:layout_margin="5dp"
+                    android:textSize="30dp"
+                    android:textColor="#242424"
+                    android:textColorHint="#242424"
+                    android:padding="10dp"
+                    android:id="@+id/editTextEmailProfile"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:textColor="#242424"
+                    android:textColorHint="#242424"
+                    android:id="@+id/editTextPasswordPost"
+                    android:background="@drawable/border"
+                    android:inputType="textPassword"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="30dp"
+                    android:hint="password"/>
+
+
+
+            <ImageButton
+                    android:src="@drawable/buttonyes"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imageButtonYesProfile"
+                    android:hint="update"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
